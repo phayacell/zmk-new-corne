@@ -15,11 +15,11 @@
 
 / {
     behaviors {
-        td0: td0 {
+        td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
             #binding-cells = <0>;
-            bindings = <&kp TILDE>, <&trans>, <&kp LALT(F4)>;
+            bindings = <&kp TILDE>, <&kp LALT(F4)>;
         };
 
         mmv {
