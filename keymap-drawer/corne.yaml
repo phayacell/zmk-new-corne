@@ -17,13 +17,13 @@ layers:
   - $$mdi:keyboard-tab$$
   - A
   - S
-  - '&hm LALT D'
-  - '&hm RCTRL F'
+  - {t: D, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - $$mdi:arrow-down-bold$$
   - H
-  - '&hm RCTRL J'
-  - '&hm LALT K'
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - L
   - P
   - {t: ;, s: ':'}
@@ -41,13 +41,13 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:play-pause$$
-  - '&hm RALT ESC'
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: LANG2, h: LOWER}
-  - '&hm LSHIFT SPACE'
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:arrow-right-bold$$
-  - '&hm LSHIFT ENTER'
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: LANG1, h: LOWER}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
   - '~'
@@ -66,13 +66,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '-', s: _}
   - {t: '4', s: $}
-  - '&hm LALT N5'
-  - '&hm RCTRL N6'
+  - {t: '5', h: '$$mdi:apple-keyboard-option$$', s: '%'}
+  - {t: '6', h: '$$mdi:apple-keyboard-control$$', s: ^}
   - {t: ',', s: <}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - END
-  - '&hm RCTRL LEFT'
-  - '&hm LALT DOWN'
+  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:arrow-down-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - ':'
