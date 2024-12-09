@@ -19,18 +19,18 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
             #binding-cells = <0>;
-            bindings = <&kp TILDE>, <&kp LALT(F4)>;
+            bindings = <&kp TILDE>, <&kp LA(F4)>;
         };
 
         mmv {
-            acceleration-exponent = <1>;      // 1
+            acceleration-exponent = <1>;     // 1
             time-to-max-speed-ms = <900>;    // 40
-            delay-ms = <0>;                   // 0
+            delay-ms = <0>;                  // 0
         };
 
         msc {
             acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <400>;      // 500
+            time-to-max-speed-ms = <400>;     // 500
             delay-ms = <0>;                   // 10
         };
     };
