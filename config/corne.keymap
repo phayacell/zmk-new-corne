@@ -15,6 +15,15 @@
 
 / {
     behaviors {
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        }
+
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD0";
@@ -57,9 +66,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp GRAVE    &kp Q     &kp W       &kp E         &kp R         &kp T             &kp UP_ARROW     &kp Y             &kp U           &kp I          &kp O      &kp MINUS  &kp SQT
-&kp TAB      &kp A     &kp S       &mt LALT D    &mt RCTRL F   &kp G             &kp DOWN_ARROW   &kp H             &mt RCTRL J     &mt LALT K     &kp L      &kp P      &kp SEMI
+&kp TAB      &kp A     &kp S       &hm LALT D    &hm RCTRL F   &kp G             &kp DOWN_ARROW   &kp H             &hm RCTRL J     &hm LALT K     &kp L      &kp P      &kp SEMI
 &kp RGUI     &kp Z     &kp X       &kp C         &kp V         &kp B             &kp LEFT_ARROW   &kp N             &kp M           &kp COMMA      &kp DOT    &kp FSLH   &kp BSLH
-                       &kp C_PP    &mt RALT ESC  &lt 1 LANG2   &mt LSHIFT SPACE  &kp RIGHT_ARROW  &mt LSHIFT ENTER  &lt 1 LANG1     &kp BSPC
+                       &kp C_PP    &hm RALT ESC  &lt 1 LANG2   &hm LSHIFT SPACE  &kp RIGHT_ARROW  &hm LSHIFT ENTER  &lt 1 LANG1     &kp BSPC
                                                                                  &kp ENTER
             >;
             label = "QWERTY";
@@ -70,7 +79,7 @@
             display-name = "LOWER";
             bindings = <
 &kp TILDE    &kp PLUS   &kp N7      &kp N8        &kp N9        &kp N0           &mmv MOVE_UP     &kp HOME          &kp PG_UP       &kp UP         &kp PG_DN  &kp UNDER  &kp DQT
-&trans       &kp MINUS  &kp N4      &mt LALT N5   &mt RCTRL N6  &kp COMMA        &mmv MOVE_DOWN   &kp END           &mt RCTRL LEFT  &mt LALT DOWN  &kp RIGHT  &trans     &kp COLON
+&trans       &kp MINUS  &kp N4      &hm LALT N5   &hm RCTRL N6  &kp COMMA        &mmv MOVE_DOWN   &kp END           &hm RCTRL LEFT  &hm LALT DOWN  &kp RIGHT  &trans     &kp COLON
 &trans       &kp EQUAL  &kp N1      &kp N2        &kp N3        &kp DOT          &mmv MOVE_LEFT   &kp LBKT          &kp RBKT        &kp LT         &kp GT     &kp QMARK  &kp PIPE
                         &kp C_MUTE  &trans        &lt 2 LANG2   &trans           &mmv MOVE_RIGHT  &trans            &lt 2 LANG1     &trans
                                                                                  &mkp LCLK
