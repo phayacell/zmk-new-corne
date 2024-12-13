@@ -13,12 +13,12 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
-#define QWERTY 0
-#define Q_LOW 1
-#define O24 2
+#define QWERTY  0
+#define Q_LOW   1
+#define O24     2
 #define O24_LOW 3
-#define RAISE 4
-#define ADJUST 5
+#define RAISE   4
+#define ADJUST  5
 
 / {
     behaviors {
@@ -56,20 +56,20 @@
             time-to-max-speed-ms = <400>;     // 500
             delay-ms = <0>;                   // 10
         };
-    };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        label = "RGB_ENCODER";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = <&msc>, <&msc>;
-        tap-ms = <30>;
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+            tap-ms = <30>;
+        };
     };
 
     keymap {
