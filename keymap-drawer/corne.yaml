@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   RAISE:
-  - '&td0'
+  - '&td TILDE LA(F4)'
   - {t: '$$mdi:transfer$$', type: trans}
   - '&'
   - '*'
