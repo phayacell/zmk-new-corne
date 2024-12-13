@@ -144,7 +144,7 @@
                     &trans      &trans      &trans      &trans      &trans  &trans      &trans      &mo ADJUST
                                                                     &trans
             >;
-            sensor-bindings = <&trans>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         adjust_layer {
@@ -157,7 +157,7 @@
                         &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans
                                                                                 &trans
             >;
-            sensor-bindings = <&trans>;
+            sensor-bindings = <&scroll_left_right>;
         };
     };
 };
