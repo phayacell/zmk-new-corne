@@ -56,20 +56,20 @@
             time-to-max-speed-ms = <400>;     // 500
             delay-ms = <0>;                   // 10
         };
-    };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        label = "RGB_ENCODER";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
+        rgb_encoder: rgb_encoder {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "RGB_ENCODER";
+            #sensor-binding-cells = <0>;
+            bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate-var";
-        #sensor-binding-cells = <2>;
-        bindings = <&msc>, <&msc>;
-        tap-ms = <30>;
+        scroll_encoder: scroll_encoder {
+            compatible = "zmk,behavior-sensor-rotater";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            tap-ms = <30>;
+        };
     };
 
     keymap {
@@ -85,7 +85,7 @@
                     &mkp MCLK   &hm RALT ESC    &lt Q_LOW LANG2  &hm LSHIFT SPACE   &kp RIGHT_ARROW &hm LSHIFT ENTER    &lt Q_LOW LANG1 &bspc_del
                                                                                     &kp ENTER
             >;
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         qwerty_lower_layer {
@@ -98,7 +98,7 @@
                         &trans  &trans      &lt RAISE LANG2 &trans      &mmv MOVE_RIGHT &trans      &lt RAISE LANG1 &trans
                                                                         &mkp LCLK
             >;
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         o24_layer {
@@ -111,7 +111,7 @@
                     &mkp MCLK   &hm RALT ESC    &lt O24_LOW LANG2    &hm LSHIFT SPACE   &kp RIGHT_ARROW &hm LSHIFT ENTER    &lt O24_LOW LANG1   &bspc_del
                                                                                         &kp ENTER
             >;
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         o24_lower_layer {
@@ -124,7 +124,7 @@
                         &trans  &trans      &lt RAISE LANG2 &trans      &mmv MOVE_RIGHT &trans      &lt RAISE LANG1 &trans
                                                                         &mkp LCLK
             >;
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {
@@ -137,7 +137,7 @@
                     &trans      &trans      &trans      &trans      &trans  &trans      &trans      &mo ADJUST
                                                                     &trans
             >;
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         adjust_layer {
@@ -150,9 +150,7 @@
                         &trans          &trans          &trans          &trans  &trans  &trans  &trans  &trans
                                                                                 &trans
             >;
-
-            sensor-bindings = <&scroll_encoder SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&scroll_encoder>;
         };
-
     };
 };
