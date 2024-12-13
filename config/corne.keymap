@@ -77,12 +77,6 @@
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
             tap-ms = <30>;
         };
-
-        rotate_volume: behavior_sensor_rotate_volume {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
-        };
     };
 
     keymap {
@@ -98,7 +92,7 @@
                     &mkp MCLK   &hm RALT ESC    &lt Q_LOW LANG2  &hm LSHIFT SPACE   &kp RIGHT_ARROW &hm LSHIFT ENTER    &lt Q_LOW LANG1 &bspc_del
                                                                                     &kp ENTER
             >;
-            sensor-bindings = <&rotate_volume>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         qwerty_lower_layer {
