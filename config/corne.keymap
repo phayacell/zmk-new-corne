@@ -14,6 +14,11 @@
 #define RAISE   4
 #define ADJUST  5
 
+&msc {
+    time-to-max-speed-ms = <100>;
+    acceleration-exponent = <2>;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
@@ -78,6 +83,20 @@
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
         };
+
+        mouse_scroll_left_right: mouse_scroll_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL_LEFT_RIGHT";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCROLL_RIGHT>, <&msc SCROLL_LEFT>;
+        };
+
+        mouse_scroll_up_down: mouse_scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSE_SCROLL_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCROLL_DOWN>, <&msc SCROLL_UP>;
+        };
     };
 
     keymap {
@@ -94,7 +113,7 @@
                                                                                 &kp ENTER
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mouse_scroll_left_right>;
         };
 
         qwerty_lower_layer {
