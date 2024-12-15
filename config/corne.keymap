@@ -90,7 +90,7 @@
                                                                          &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&mouse_scroll_up_down>;
         };
 
         o24_layer {
@@ -104,7 +104,7 @@
                                                                                   &kp ENTER
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&mouse_scroll_left_right>;
         };
 
         o24_lower_layer {
@@ -118,7 +118,7 @@
                                                                          &mkp LCLK
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&mouse_scroll_up_down>;
         };
 
         raise_layer {
@@ -132,7 +132,7 @@
                                                                  &trans
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&mouse_scroll_left_right>;
         };
 
         adjust_layer {
@@ -146,7 +146,7 @@
                                                                              &trans
             >;
 
-            sensor-bindings = <&scroll_left_right>;
+            sensor-bindings = <&mouse_scroll_left_right>;
         };
     };
 };
