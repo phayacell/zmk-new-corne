@@ -61,13 +61,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
-
-        mouse_scroll: mouse_scroll {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "MOUSE_SCROLL";
-            #sensor-binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-        };
     };
 
     keymap {
@@ -112,7 +105,7 @@
                                                                                   &kp ENTER
             >;
 
-            sensor-bindings = <&mouse_scroll SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&mouse_scroll_left_right>;
         };
 
         o24_lower_layer {
