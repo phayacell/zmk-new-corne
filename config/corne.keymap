@@ -51,14 +51,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_SCROLL_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_RIGHT>, <&msc SCROLL_LEFT>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
         };
 
         mouse_scroll_up_down: mouse_scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSE_SCROLL_UP_DOWN";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCROLL_DOWN>, <&msc SCROLL_UP>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
 
