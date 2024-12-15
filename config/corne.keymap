@@ -3,10 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 2000  // default: 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 500   // default: 10
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #define QWERTY  0
 #define Q_LOW   1
 #define O24     2
@@ -16,7 +18,7 @@
 
 &msc {
     time-to-max-speed-ms = <100>;
-    acceleration-exponent = <2>;
+    acceleration-exponent = <1>;
 };
 
 / {
@@ -59,6 +61,13 @@
             label = "MOUSE_SCROLL_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        };
+
+        mouse_scroll: mouse_scroll {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "MOUSE_SCROLL_UP_DOWN";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
         };
     };
 
@@ -104,7 +113,7 @@
                                                                                   &kp ENTER
             >;
 
-            sensor-bindings = <&mouse_scroll_left_right>;
+            sensor-bindings = <&mouse_scroll SCRL_RIGHT SCRL_LEFT>;
         };
 
         o24_lower_layer {
