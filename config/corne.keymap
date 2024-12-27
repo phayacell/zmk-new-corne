@@ -3,11 +3,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
-
 #define QWERTY  0
 #define Q_LOW   1
 #define O24     2
@@ -77,7 +78,7 @@
                                                                                 &kp ENTER
             >;
 
-            sensor-bindings = <&mouse_scroll_left_right>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         qwerty_lower_layer {
@@ -105,7 +106,7 @@
                                                                                   &kp ENTER
             >;
 
-            sensor-bindings = <&mouse_scroll_left_right>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         o24_lower_layer {
