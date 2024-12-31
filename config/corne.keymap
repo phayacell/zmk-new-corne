@@ -92,7 +92,7 @@
                                                                          &mkp LCLK
             >;
 
-            sensor-bindings = <&mouse_scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         o24_layer {
@@ -120,7 +120,7 @@
                                                                          &mkp LCLK
             >;
 
-            sensor-bindings = <&mouse_scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
