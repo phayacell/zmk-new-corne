@@ -40,7 +40,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - $$mdi:mouse-scroll-wheel$$
+  - RETURN
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: LANG2, h: LOWER}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -89,7 +89,7 @@ layers:
   - '>'
   - '?'
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LANG2, h: RAISE, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -138,7 +138,7 @@ layers:
   - J
   - B
   - {t: \, s: '|'}
-  - $$mdi:mouse-scroll-wheel$$
+  - RETURN
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: LANG2, h: O24 LO}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -187,7 +187,7 @@ layers:
   - '>'
   - {t: '$$mdi:transfer$$', type: trans}
   - '|'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: LANG2, h: RAISE, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -197,7 +197,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   RAISE:
-  - '&tdquit'
+  - Alt+F4
   - {t: '$$mdi:transfer$$', type: trans}
   - '&'
   - '*'
@@ -210,7 +210,7 @@ layers:
   - F4
   - F5
   - F6
-  - $$mdi:play-pause$$
+  - PLAY PAUSE
   - {t: '$$mdi:transfer$$', type: trans}
   - $
   - '%'
@@ -272,7 +272,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
