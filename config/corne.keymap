@@ -71,11 +71,11 @@
             label = "QWERTY";
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE  &kp Q  &kp W      &kp E         &kp R            &kp T               &kp UP_ARROW     &kp Y             &kp U            &kp I       &kp O    &kp MINUS  &kp SQT
-&kp TAB    &kp A  &kp S      &hm LALT D    &hm RCTRL F      &kp G               &kp DOWN_ARROW   &kp H             &hm RCTRL J      &hm LALT K  &kp L    &kp P      &kp SEMI
-&kp RGUI   &kp Z  &kp X      &kp C         &kp V            &kp B               &kp LEFT_ARROW   &kp N             &kp M            &kp COMMA   &kp DOT  &kp FSLH   &kp BSLH
-                  &mkp MCLK  &hm RALT ESC  &lt Q_LOW LANG2  &hm LSHIFT SPACE    &kp RIGHT_ARROW  &hm LSHIFT ENTER  &lt Q_LOW LANG1  &bspc_del
-                                                                                &kp ENTER
+&kp GRAVE  &kp Q  &kp W       &kp E         &kp R            &kp T               &kp UP_ARROW     &kp Y             &kp U            &kp I       &kp O    &kp MINUS  &kp SQT
+&kp TAB    &kp A  &kp S       &hm LALT D    &hm RCTRL F      &kp G               &kp DOWN_ARROW   &kp H             &hm RCTRL J      &hm LALT K  &kp L    &kp P      &kp SEMI
+&kp RGUI   &kp Z  &kp X       &kp C         &kp V            &kp B               &kp LEFT_ARROW   &kp N             &kp M            &kp COMMA   &kp DOT  &kp FSLH   &kp BSLH
+                  &kp RETURN  &hm RALT ESC  &lt Q_LOW LANG2  &hm LSHIFT SPACE    &kp RIGHT_ARROW  &hm LSHIFT ENTER  &lt Q_LOW LANG1  &bspc_del
+                                                                                 &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -85,11 +85,11 @@
             label = "LOWER";
             display-name = "LOWER";
             bindings = <
-&kp TILDE  &kp PLUS   &kp N7  &kp N8       &kp N9           &kp N0       &mmv MOVE_UP     &kp HOME  &kp PG_UP        &kp UP         &kp PG_DN  &kp UNDER  &kp DQT
-&trans     &kp MINUS  &kp N4  &hm LALT N5  &hm RCTRL N6     &kp COMMA    &mmv MOVE_DOWN   &kp END   &hm RCTRL LEFT   &hm LALT DOWN  &kp RIGHT  &trans     &kp COLON
-&trans     &kp EQUAL  &kp N1  &kp N2       &kp N3           &kp DOT      &mmv MOVE_LEFT   &kp LBKT  &kp RBKT         &kp LT         &kp GT     &kp QMARK  &kp PIPE
-                      &trans  &trans       &lt RAISE LANG2  &trans       &mmv MOVE_RIGHT  &trans    &lt RAISE LANG1  &trans
-                                                                         &mkp LCLK
+&kp TILDE  &kp PLUS   &kp N7      &kp N8       &kp N9           &kp N0       &mmv MOVE_UP     &kp HOME  &kp PG_UP        &kp UP         &kp PG_DN  &kp UNDER  &kp DQT
+&trans     &kp MINUS  &kp N4      &hm LALT N5  &hm RCTRL N6     &kp COMMA    &mmv MOVE_DOWN   &kp END   &hm RCTRL LEFT   &hm LALT DOWN  &kp RIGHT  &trans     &kp COLON
+&trans     &kp EQUAL  &kp N1      &kp N2       &kp N3           &kp DOT      &mmv MOVE_LEFT   &kp LBKT  &kp RBKT         &kp LT         &kp GT     &kp QMARK  &kp PIPE
+                      &kp K_MUTE  &trans       &lt RAISE LANG2  &trans       &mmv MOVE_RIGHT  &trans    &lt RAISE LANG1  &trans
+                                                                             &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -99,11 +99,11 @@
             label = "O24";
             display-name = "O24";
             bindings = <
-&kp GRAVE  &kp Q  &kp L      &kp U         &kp COMMA          &kp DOT             &kp UP_ARROW     &kp F             &kp W              &kp R       &kp Y  &kp P  &kp SQT
-&kp TAB    &kp E  &kp I      &hm LALT A    &hm RCTRL O        &kp MINUS           &kp DOWN_ARROW   &kp K             &hm RCTRL T        &hm LALT N  &kp S  &kp H  &kp FSLH
-&kp RGUI   &kp Z  &kp X      &kp C         &kp V              &kp SEMI            &kp LEFT_ARROW   &kp G             &kp D              &kp M       &kp J  &kp B  &kp BSLH
-                  &mkp MCLK  &hm RALT ESC  &lt O24_LOW LANG2  &hm LSHIFT SPACE    &kp RIGHT_ARROW  &hm LSHIFT ENTER  &lt O24_LOW LANG1  &bspc_del
-                                                                                  &kp ENTER
+&kp GRAVE  &kp Q  &kp L       &kp U         &kp COMMA          &kp DOT             &kp UP_ARROW     &kp F             &kp W              &kp R       &kp Y  &kp P  &kp SQT
+&kp TAB    &kp E  &kp I       &hm LALT A    &hm RCTRL O        &kp MINUS           &kp DOWN_ARROW   &kp K             &hm RCTRL T        &hm LALT N  &kp S  &kp H  &kp FSLH
+&kp RGUI   &kp Z  &kp X       &kp C         &kp V              &kp SEMI            &kp LEFT_ARROW   &kp G             &kp D              &kp M       &kp J  &kp B  &kp BSLH
+                  &kp RETURN  &hm RALT ESC  &lt O24_LOW LANG2  &hm LSHIFT SPACE    &kp RIGHT_ARROW  &hm LSHIFT ENTER  &lt O24_LOW LANG1  &bspc_del
+                                                                                   &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
@@ -113,11 +113,11 @@
             label = "O24 LO";
             display-name = "O24 LO";
             bindings = <
-&kp TILDE  &kp PLUS   &kp N7  &kp N8       &kp N9           &kp N0       &mmv MOVE_UP     &kp HOME  &kp PG_UP        &kp UP         &kp PG_DN  &kp PSCRN  &kp DQT
-&trans     &kp MINUS  &kp N4  &hm LALT N5  &hm RCTRL N6     &kp UNDER    &mmv MOVE_DOWN   &kp END   &hm RCTRL LEFT   &hm LALT DOWN  &kp RIGHT  &trans     &kp QMARK
-&trans     &kp EQUAL  &kp N1  &kp N2       &kp N3           &kp COLON    &mmv MOVE_LEFT   &kp LBKT  &kp RBKT         &kp LT         &kp GT     &trans     &kp PIPE
-                      &trans  &trans       &lt RAISE LANG2  &trans       &mmv MOVE_RIGHT  &trans    &lt RAISE LANG1  &trans
-                                                                         &mkp LCLK
+&kp TILDE  &kp PLUS   &kp N7      &kp N8       &kp N9           &kp N0       &mmv MOVE_UP     &kp HOME  &kp PG_UP        &kp UP         &kp PG_DN  &kp PSCRN  &kp DQT
+&trans     &kp MINUS  &kp N4      &hm LALT N5  &hm RCTRL N6     &kp UNDER    &mmv MOVE_DOWN   &kp END   &hm RCTRL LEFT   &hm LALT DOWN  &kp RIGHT  &trans     &kp QMARK
+&trans     &kp EQUAL  &kp N1      &kp N2       &kp N3           &kp COLON    &mmv MOVE_LEFT   &kp LBKT  &kp RBKT         &kp LT         &kp GT     &trans     &kp PIPE
+                      &kp K_MUTE  &trans       &lt RAISE LANG2  &trans       &mmv MOVE_RIGHT  &trans    &lt RAISE LANG1  &trans
+                                                                             &mkp LCLK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -127,11 +127,11 @@
             label = "RAISE";
             display-name = "RAISE";
             bindings = <
-&tdquit      &trans  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR    &trans  &kp F1    &kp F2    &kp F3      &kp F4   &kp F5   &kp F6
-&kp C_PP     &trans  &kp DLLR  &kp PRCNT  &kp CARET  &trans      &trans  &kp F7    &kp F8    &kp F9      &kp F10  &kp F11  &kp F12
-&kp C_SLEEP  &trans  &kp EXCL  &kp AT     &kp HASH   &trans      &trans  &kp LBRC  &kp RBRC  &trans      &trans   &trans   &tog O24
-                     &trans    &trans     &trans     &trans      &trans  &trans    &trans    &mo ADJUST
-                                                                 &trans
+&kp LA(F4)        &trans  &kp AMPS  &kp ASTRK  &kp LPAR   &kp RPAR    &trans  &kp F1    &kp F2    &kp F3      &kp F4   &kp F5   &kp F6
+&kp K_PLAY_PAUSE  &trans  &kp DLLR  &kp PRCNT  &kp CARET  &trans      &trans  &kp F7    &kp F8    &kp F9      &kp F10  &kp F11  &kp F12
+&kp C_SLEEP       &trans  &kp EXCL  &kp AT     &kp HASH   &trans      &trans  &kp LBRC  &kp RBRC  &trans      &trans   &trans   &tog O24
+                          &trans    &trans     &trans     &trans      &trans  &trans    &trans    &mo ADJUST
+                                                                      &trans
             >;
 
             sensor-bindings = <&mouse_scroll_left_right>;
@@ -143,7 +143,7 @@
             bindings = <
 &bt BT_CLR_ALL   &trans  &trans        &trans        &trans        &bt BT_CLR    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &rgb_ug RGB_TOG  &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&none            &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans
                                                                                  &trans
             >;
